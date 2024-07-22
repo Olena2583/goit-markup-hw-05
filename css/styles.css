@@ -622,6 +622,8 @@ input::placeholder {
   visibility: visible;
   pointer-events: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 .backdrop:not(.is-open).modal {
   transform: translate(-50%, -50%) scale(1.5);
@@ -650,12 +652,49 @@ input::placeholder {
   background-color: #404bbf;
   border: none;
 }
-.button > svg:hover,
-.button > svg:focus {
+.button > .modal-close:hover,
+.modal-close:focus {
   fill: #ffffff;
 }
 
 .modal-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
+}
+.modal-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 14px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-hero {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
