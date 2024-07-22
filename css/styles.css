@@ -733,8 +733,7 @@ input::placeholder {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  padding-top: 8px;
-  padding-left: 16px;
+  padding: 8px 16px;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -742,4 +741,40 @@ input::placeholder {
 .commit-text:hover,
 .commit-text:focus {
   border-color: #4d5ae5;
+}
+.form-checkbox {
+  margin-bottom: 24px;
+}
+.checkbox-privacy {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.checkbox-span {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  fill: transparent;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+.vector {
+  fill: #f4f4fd;
+}
+/* .checkbox-span[type='checkbox']:checked + .checkbox-privacy {
+  background-color: #404bbf;
+} */
+.checkbox-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
