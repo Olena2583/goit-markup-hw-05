@@ -669,7 +669,7 @@ input::placeholder {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 .modal-form {
   display: flex;
@@ -679,9 +679,15 @@ input::placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.icon-list {
+  margin-bottom: 8px;
+  position: relative;
 }
 
 .form-input {
