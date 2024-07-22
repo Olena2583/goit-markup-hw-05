@@ -769,12 +769,6 @@ input::placeholder {
 .vector {
   fill: #f4f4fd;
 }
-input:checked {
-  border: none;
-  background-color: #404bbf;
-  fill: #f4f4fd;
-}
-
 .checkbox-link {
   line-height: 1.33;
   text-decoration: underline;
