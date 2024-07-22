@@ -760,6 +760,7 @@ input::placeholder {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
+  display: inline-flex;
   align-items: center;
   fill: transparent;
   justify-content: center;
@@ -777,4 +778,25 @@ input::placeholder {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+
+.btn-form {
+  display: block;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
